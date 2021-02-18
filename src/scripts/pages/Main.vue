@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <card-container
-    :dataItem="complete"
+    :dataItem="dataItem"
     @nextWord="nextWord()"
     />
   </div>
@@ -10,20 +10,11 @@
 <script>
 import CardContainer from '@components/CardContainer'
 
-import { mapState } from 'vuex'
-
-const arr = [
-  { text: "arise arose arisen", translate: "подниматься", count: 0 },
-  { text: "awake awoke awoken", translate: "пробуждать", count: 1 },
-  { text: "be was (were) been", translate: "быть", count: 2 },
-]
-
+import { mapGetters } from 'vuex'
 
 export default {
   data() {
     return {
-      dataItem: arr,
-      complete: {},
     }
   },
 
@@ -32,35 +23,20 @@ export default {
   },
 
   computed: {
-    ...mapState({
-      dataSets: 'dataSets',
+    ...mapGetters({
+      dataItem: 'dataItem',
     })
   },
 
   methods: {
-    giveMeWord() {
-      let randomIndex = Math.floor(Math.random() * this.dataItem.length);
-
-      this.complete = {
-        translate: this.dataItem[randomIndex].translate,
-        content: this.dataItem[randomIndex].text,
-        count: this.dataItem[randomIndex].count,
-      }
-    },
-
     nextWord() {
-      this.giveMeWord()
+      this.$store.commit('giveMeWord')
     },
-  },
-
-  async created() {
-    await this.giveMeWord()
   },
 
   async mounted() {
-    // await this.$store.dispatch('fetchArray');
-    await this.giveMeWord()
-    // console.log(this.dataSets);
+    await this.$store.dispatch('fetchArray');
+    this.nextWord()
   },
 }
 

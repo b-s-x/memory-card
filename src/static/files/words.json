@@ -1,0 +1,602 @@
+[
+  {
+    "text": "arise arose arisen",
+    "translate": "подниматься",
+    "count": 0
+  },
+  {
+    "text": "awake awoke awoken",
+    "translate": "пробуждать",
+    "count": 0
+  },
+  {
+    "text": "be was (were) been",
+    "translate": "быть",
+    "count": 0
+  },
+  {
+    "text": "bear bore born",
+    "translate": "рожать, переносить",
+    "count": 0
+  },
+  {
+    "text": "beat beat beaten",
+    "translate": "бить",
+    "count": 0
+  },
+  {
+    "text": "become became become",
+    "translate": "становиться",
+    "count": 0
+  },
+  {
+    "text": "begin began begun",
+    "translate": "начинать",
+    "count": 0
+  },
+  {
+    "text": "bend bent bent",
+    "translate": "наклонять",
+    "count": 0
+  },
+  {
+    "text": "bet bet bet",
+    "translate": "заключать пари",
+    "count": 0
+  },
+  {
+    "text": "bind bound bound",
+    "translate": "связывать",
+    "count": 0
+  },
+  {
+    "text": "bite bit bitten",
+    "translate": "кусать",
+    "count": 0
+  },
+  {
+    "text": "bleed bled bled",
+    "translate": "кровоточить",
+    "count": 0
+  },
+  {
+    "text": "blow blew blown",
+    "translate": "дуть",
+    "count": 0
+  },
+  {
+    "text": "break broke broken",
+    "translate": "ломать",
+    "count": 0
+  },
+  {
+    "text": "breed bred bred",
+    "translate": "разводить животных",
+    "count": 0
+  },
+  {
+    "text": "bring brought brought",
+    "translate": "приносить",
+    "count": 0
+  },
+  {
+    "text": "build built built ",
+    "translate": "строить",
+    "count": 0
+  },
+  {
+    "text": "buy bought bought",
+    "translate": "покупать",
+    "count": 0
+  },
+  {
+    "text": "catch caught caught",
+    "translate": "ловить",
+    "count": 0
+  },
+  {
+    "text": "choose chose chosen",
+    "translate": "выбирать",
+    "count": 0
+  },
+  {
+    "text": "cling clung clung",
+    "translate": "цепляться",
+    "count": 0
+  },
+  {
+    "text": "come came come",
+    "translate": "приходить",
+    "count": 0
+  },
+  {
+    "text": "cost cost cost",
+    "translate": "стоить",
+    "count": 0
+  },
+  {
+    "text": "cut cut cut",
+    "translate": "резать",
+    "count": 0
+  },
+  {
+    "text": "deal dealt dealt",
+    "translate": "вести дела",
+    "count": 0
+  },
+  {
+    "text": "dig dug dug",
+    "translate": "копать",
+    "count": 0
+  },
+  {
+    "text": "do did done",
+    "translate": "делать",
+    "count": 0
+  },
+  {
+    "text": "draw drew drawn",
+    "translate": "рисовать, тянуть",
+    "count": 0
+  },
+  {
+    "text": "drink drank drunk",
+    "translate": "пить",
+    "count": 0
+  },
+  {
+    "text": "drive drove driven",
+    "translate": "водить автомобиль",
+    "count": 0
+  },
+  {
+    "text": "eat ate eaten",
+    "translate": "есть",
+    "count": 0
+  },
+  {
+    "text": "fall fell fallen",
+    "translate": "падать",
+    "count": 0
+  },
+  {
+    "text": "feed fed fed",
+    "translate": "кормить",
+    "count": 0
+  },
+  {
+    "text": "feel felt felt",
+    "translate": "чувствовать",
+    "count": 0
+  },
+  {
+    "text": "fight fought fought",
+    "translate": "бороться",
+    "count": 0
+  },
+  {
+    "text": "find found found",
+    "translate": "находить",
+    "count": 0
+  },
+  {
+    "text": "flee fled fled",
+    "translate": "сбегать",
+    "count": 0
+  },
+  {
+    "text": "fly flew flown",
+    "translate": "летать",
+    "count": 0
+  },
+  {
+    "text": "forbid forbade forbidden",
+    "translate": "запрещать",
+    "count": 0
+  },
+  {
+    "text": "forget forgot forgotten",
+    "translate": "забывать",
+    "count": 0
+  },
+  {
+    "text": "forgive forgave forgiven",
+    "translate": "прощать",
+    "count": 0
+  },
+  {
+    "text": "freeze froze frozen",
+    "translate": "замораживать",
+    "count": 0
+  },
+  {
+    "text": "get got got (gotten)",
+    "translate": "получать",
+    "count": 0
+  },
+  {
+    "text": "give gave given",
+    "translate": "давать",
+    "count": 0
+  },
+  {
+    "text": "go went gone",
+    "translate": "идти",
+    "count": 0
+  },
+  {
+    "text": "grow grew grown",
+    "translate": "расти",
+    "count": 0
+  },
+  {
+    "text": "hang hung hung",
+    "translate": "висеть",
+    "count": 0
+  },
+  {
+    "text": "have had had ",
+    "translate": "иметь",
+    "count": 0
+  },
+  {
+    "text": "hear heard heard",
+    "translate": "слышать",
+    "count": 0
+  },
+  {
+    "text": "hide hid hidden",
+    "translate": "прятать",
+    "count": 0
+  },
+  {
+    "text": "hit hit hit",
+    "translate": "ударять, попадать",
+    "count": 0
+  },
+  {
+    "text": "hold held held",
+    "translate": "держать",
+    "count": 0
+  },
+  {
+    "text": "hurt hurt hurt",
+    "translate": "причинять боль",
+    "count": 0
+  },
+  {
+    "text": "keep kept kept",
+    "translate": "сохранять, соблюдать",
+    "count": 0
+  },
+  {
+    "text": "know knew known",
+    "translate": "знать",
+    "count": 0
+  },
+  {
+    "text": "lay laid laid",
+    "translate": "класть",
+    "count": 0
+  },
+  {
+    "text": "lead led led",
+    "translate": "вести, лидировать",
+    "count": 0
+  },
+  {
+    "text": "learn learnt learnt",
+    "translate": "учиться, узнавать",
+    "count": 0
+  },
+  {
+    "text": "leave left left",
+    "translate": "покидать, оставлять",
+    "count": 0
+  },
+  {
+    "text": "lend lent lent ",
+    "translate": "давать взаймы",
+    "count": 0
+  },
+  {
+    "text": "let let let",
+    "translate": "позволять",
+    "count": 0
+  },
+  {
+    "text": "lie lay lain",
+    "translate": "лежать",
+    "count": 0
+  },
+  {
+    "text": "light lit lit",
+    "translate": "зажигать, освещать",
+    "count": 0
+  },
+  {
+    "text": "lose lost lost",
+    "translate": "терять",
+    "count": 0
+  },
+  {
+    "text": "make made made",
+    "translate": "делать, мастерить",
+    "count": 0
+  },
+  {
+    "text": "mean meant meant",
+    "translate": "значить",
+    "count": 0
+  },
+  {
+    "text": "meet met met",
+    "translate": "встречать, знакомиться",
+    "count": 0
+  },
+  {
+    "text": "pay paid paid",
+    "translate": "платить",
+    "count": 0
+  },
+  {
+    "text": "put put put",
+    "translate": "класть, ставить",
+    "count": 0
+  },
+  {
+    "text": "read read read",
+    "translate": "читать",
+    "count": 0
+  },
+  {
+    "text": "ride rode ridden",
+    "translate": "ездить верхом",
+    "count": 0
+  },
+  {
+    "text": "ring rang rung",
+    "translate": "звонить",
+    "count": 0
+  },
+  {
+    "text": "rise rose risen ",
+    "translate": "возрастать, подниматься",
+    "count": 0
+  },
+  {
+    "text": "run ran run",
+    "translate": "бежать",
+    "count": 0
+  },
+  {
+    "text": "say said said",
+    "translate": "сказать",
+    "count": 0
+  },
+  {
+    "text": "see saw seen",
+    "translate": "видеть",
+    "count": 0
+  },
+  {
+    "text": "seek sought sought ",
+    "translate": "искать",
+    "count": 0
+  },
+  {
+    "text": "sell sold sold",
+    "translate": "продавать",
+    "count": 0
+  },
+  {
+    "text": "send sent sent",
+    "translate": "посылать",
+    "count": 0
+  },
+  {
+    "text": "set set set ",
+    "translate": "устанавливать",
+    "count": 0
+  },
+  {
+    "text": "shake shook shaken",
+    "translate": "трясти",
+    "count": 0
+  },
+  {
+    "text": "shine shone shone",
+    "translate": "светить, сиять",
+    "count": 0
+  },
+  {
+    "text": "shoot shot shot",
+    "translate": "стрелять",
+    "count": 0
+  },
+  {
+    "text": "show showed shown ",
+    "translate": "показывать",
+    "count": 0
+  },
+  {
+    "text": "shrink shrank shrunk",
+    "translate": "сжиматься",
+    "count": 0
+  },
+  {
+    "text": "shut shut shut",
+    "translate": "закрывать, затворять",
+    "count": 0
+  },
+  {
+    "text": "sing sang sung ",
+    "translate": "петь",
+    "count": 0
+  },
+  {
+    "text": "sit sat sat",
+    "translate": "сидеть",
+    "count": 0
+  },
+  {
+    "text": "sleep slept slept",
+    "translate": "спать",
+    "count": 0
+  },
+  {
+    "text": "slide slid slid",
+    "translate": "скользить",
+    "count": 0
+  },
+  {
+    "text": "smell smelt smelt",
+    "translate": "пахнуть, нюхать",
+    "count": 0
+  },
+  {
+    "text": "speak spoke spoken",
+    "translate": "говорить",
+    "count": 0
+  },
+  {
+    "text": "spell spelt spelt",
+    "translate": "произносить или писать по буквам",
+    "count": 0
+  },
+  {
+    "text": "spend spent spent",
+    "translate": "тратить, проводить время",
+    "count": 0
+  },
+  {
+    "text": "spill spilt (spilled) spilt (spilled)",
+    "translate": "разлить",
+    "count": 0
+  },
+  {
+    "text": "spin spun spun",
+    "translate": "крутить",
+    "count": 0
+  },
+  {
+    "text": "split split split",
+    "translate": "разделять, раскалывать",
+    "count": 0
+  },
+  {
+    "text": "spoil spoilt (spoiled) spoilt (spoiled)",
+    "translate": "портить",
+    "count": 0
+  },
+  {
+    "text": "spread spread spread",
+    "translate": "разворачивать, распространять",
+    "count": 0
+  },
+  {
+    "text": "stand stood stood",
+    "translate": "стоять",
+    "count": 0
+  },
+  {
+    "text": "steal stole stolen",
+    "translate": "воровать",
+    "count": 0
+  },
+  {
+    "text": "sting stung stung",
+    "translate": "жалить",
+    "count": 0
+  },
+  {
+    "text": "stink stank stunk",
+    "translate": "вонять",
+    "count": 0
+  },
+  {
+    "text": "strike struck struck",
+    "translate": "бастовать, ударять",
+    "count": 0
+  },
+  {
+    "text": "swear swore sworn",
+    "translate": "клясться, ругаться",
+    "count": 0
+  },
+  {
+    "text": "sweep swept swept",
+    "translate": "подметать",
+    "count": 0
+  },
+  {
+    "text": "swell swelled swollen (swelled)",
+    "translate": "опухать",
+    "count": 0
+  },
+  {
+    "text": "swim swam swum",
+    "translate": "плавать",
+    "count": 0
+  },
+  {
+    "text": "take took taken",
+    "translate": "брать",
+    "count": 0
+  },
+  {
+    "text": "teach taught taught",
+    "translate": "обучать",
+    "count": 0
+  },
+  {
+    "text": "tear tore torn",
+    "translate": "рвать",
+    "count": 0
+  },
+  {
+    "text": "tell told told",
+    "translate": "рассказывать",
+    "count": 0
+  },
+  {
+    "text": "think thought thought",
+    "translate": "думать",
+    "count": 0
+  },
+  {
+    "text": "throw threw thrown",
+    "translate": "бросать",
+    "count": 0
+  },
+  {
+    "text": "understand understood understood",
+    "translate": "понимать",
+    "count": 0
+  },
+  {
+    "text": "wake woke woken ",
+    "translate": "будить",
+    "count": 0
+  },
+  {
+    "text": "wear wore worn",
+    "translate": "носить (одежду)",
+    "count": 0
+  },
+  {
+    "text": "win won won",
+    "translate": "побеждать",
+    "count": 0
+  },
+  {
+    "text": "wind wound wound",
+    "translate": "обматывать, изгибаться",
+    "count": 0
+  },
+  {
+    "text": "write wrote written",
+    "translate": "писать",
+    "count": 0
+  }
+]
