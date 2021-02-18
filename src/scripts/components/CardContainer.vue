@@ -4,12 +4,12 @@
     <quantity
       class="one"
       ref="quantity"
-      :dataCount="dataItem.count"
+      :dataCount="dataCurrentItem.count"
     />
 
     <card-item
       class="card__item"
-      :dataItem="dataItem"
+      :dataCurrentItem="dataCurrentItem"
       ref="cardItem"
     />
 
@@ -55,7 +55,7 @@ export default {
   },
 
   props: {
-    dataItem: { type: Object, default: () => ({}) },
+    dataCurrentItem: { type: Object, default: () => ({}) },
   },
 
   methods: {

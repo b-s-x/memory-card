@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <card-container
-    :dataItem="dataItem"
+    :dataCurrentItem="dataCurrentItem"
     @nextWord="nextWord()"
     />
   </div>
@@ -24,22 +24,23 @@ export default {
 
   computed: {
     ...mapGetters({
-      dataItem: 'dataItem',
+      dataCurrentItem: 'dataCurrentItem',
+      dataSet: 'dataSet',
     })
   },
 
   methods: {
-    nextWord() {
+    async nextWord() {
+      await this.$store.commit('countRaise')
       this.$store.commit('giveMeWord')
     },
   },
 
   async mounted() {
     await this.$store.dispatch('fetchArray');
-    this.nextWord()
+    this.$store.commit('giveMeWord')
   },
 }
-
 
 </script>
 

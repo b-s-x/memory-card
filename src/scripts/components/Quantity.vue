@@ -26,7 +26,7 @@ export default {
     raise() {
       this.count++;
       this.count = this.dataCount
-      console.log(this.dataCount);
+      // console.log(this.dataCount);
     },
 
     decline() {

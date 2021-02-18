@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "arise arose arisen",
+    "translate": "подниматься",
+    "count": 0
+  },
+  {
+    "id": 2,
+    "text": "awake awoke awoken",
+    "translate": "пробуждать",
+    "count": 0
+  },
+  {
+    "id": 3,
+    "text": "be was (were) been",
+    "translate": "быть",
+    "count": 0
+  }
+]

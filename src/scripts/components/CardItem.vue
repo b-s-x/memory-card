@@ -1,9 +1,9 @@
 <template>
   <div class="card-item__container">
-    <div class="title">{{dataItem.translate}}</div>
+    <div class="title">{{dataCurrentItem.translate}}</div>
     <div
     class="text"
-    >{{dataItem.content}}</div>
+    >{{dataCurrentItem.text}}</div>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     }
   },
   props: {
-    dataItem: { type: Object, default: () => ({}) },
+    dataCurrentItem: { type: Object, default: () => ({}) },
   },
 
   methods: {
