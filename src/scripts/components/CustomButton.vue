@@ -48,13 +48,6 @@ $color-inactive: #BFBFBF;
 $color-strong: #0a0000;
 $windowshadow: 0px 5px 10px rgba(0, 0, 0, 0.22), 0px 0px 1px rgba(0, 0, 0, 0.2);
 
-// @mixin font {
-//     %font-family;
-//     font-size: 16px;
-//     line-height: 24px;
-// }
-
-
 .button {
   height: 50px;
   display: flex;
@@ -89,7 +82,7 @@ $windowshadow: 0px 5px 10px rgba(0, 0, 0, 0.22), 0px 0px 1px rgba(0, 0, 0, 0.2);
   transition: 0.2s;
   user-select: none;
   font: {
-    size: 16px;
+    size: calc(16px + 0.4vw);
     weight: 600;
   };
 }

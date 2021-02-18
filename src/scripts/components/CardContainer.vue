@@ -2,7 +2,6 @@
   <div class="card__container">
 
     <quantity
-      class="one"
       ref="quantity"
       :dataCount="dataCurrentItem.count"
     />
@@ -90,12 +89,12 @@ $card-shadow: -8px 6px 57px -1px rgba(34, 60, 80, 0.59);
   box-shadow: $card-shadow;
   border-radius: 20px;
   padding: 40px;
-  min-height: 210px;
 }
 
 .button__container {
   @include flex();
   padding-top: 30px;
+  height: calc(50px + 0.5vh);
 }
 
 .button {
