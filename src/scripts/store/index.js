@@ -28,15 +28,18 @@ export default new Vuex.Store({
       commit('settingData', data)
     },
 
-    // async dataPostServer(data) {
-    //   const response = await fetch("files/words-test.json", {
-    //     method: "POST",
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data)
-    //   })
-    // }
+    async sendDataToServer() {
+      const data = {"namememkgndgjdbgBSXBSX": 1 };
+
+      const response = await fetch("/file", {
+        method: "POST",
+        headers: new Headers({
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }),
+        body: JSON.stringify(data)
+      })
+    }
   },
 
   mutations: {
@@ -47,17 +50,17 @@ export default new Vuex.Store({
     giveMeWord(state ) {
       let randomIndex = Math.floor(Math.random() * state.dataSet.length);
       console.log(randomIndex);
-      if( randomIndex === state.lastRandomIndex) {
-      //todo something
-      } else {
-        state.lastRandomIndex = randomIndex
-      }
+
+      // if(randomIndex === state.lastRandomIndex) {
+      // //todo something
+      // } else {
+      // }
+      state.lastRandomIndex = randomIndex
       state.dataCurrentItem = state.dataSet[randomIndex]
     },
 
     countRaise(state) {
-      // const id = state.dataCurrentItem.id
-      // let x = state.dataSets[id].count
+      state.dataSet[state.lastRandomIndex].count++
     }
   },
 })
