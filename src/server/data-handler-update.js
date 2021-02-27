@@ -3,17 +3,20 @@ const fs = require("fs")
 const data = {
   "id":3,
   "text":"be was (were) been",
-  "translate":"быть","count": 5
+  "translate":"быть",
+  "count": 5
 }
 
 const dataHandler = (data) => {
 
-  const dataParse = JSON.parse(data)
-  
   fs.readFile('../static/files/words-test.json', 'utf8', (err, dataServerJSON) => {
     const dataReadServerParse = JSON.parse(dataServerJSON)
-    console.log( dataReadServerParse[dataParse.id]);
-    dataReadServerParse[dataParse.id].count = dataParse.count
+
+    dataReadServerParse.filter((elem) =>  {
+      if(elem.id === data.id) {
+        elem.count = data.count
+      }
+    })
 
     const dataServerStringify = JSON.stringify(dataReadServerParse)
 
@@ -21,7 +24,6 @@ const dataHandler = (data) => {
       if(err) throw err
     })
   })
-
 }
 
 dataHandler(data)
