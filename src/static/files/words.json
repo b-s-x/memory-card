@@ -1,600 +1,720 @@
 [
   {
+    "id": 0,
     "text": "arise arose arisen",
     "translate": "подниматься",
     "count": 0
   },
   {
+    "id": 1,
     "text": "awake awoke awoken",
     "translate": "пробуждать",
     "count": 0
   },
   {
+    "id": 2,
     "text": "be was (were) been",
     "translate": "быть",
     "count": 0
   },
   {
+    "id": 3,
     "text": "bear bore born",
     "translate": "рожать, переносить",
     "count": 0
   },
   {
+    "id": 4,
     "text": "beat beat beaten",
     "translate": "бить",
     "count": 0
   },
   {
+    "id": 5,
     "text": "become became become",
     "translate": "становиться",
     "count": 0
   },
   {
+    "id": 6,
     "text": "begin began begun",
     "translate": "начинать",
     "count": 0
   },
   {
+    "id": 7,
     "text": "bend bent bent",
     "translate": "наклонять",
     "count": 0
   },
   {
+    "id": 8,
     "text": "bet bet bet",
     "translate": "заключать пари",
     "count": 0
   },
   {
+    "id": 9,
     "text": "bind bound bound",
     "translate": "связывать",
     "count": 0
   },
   {
+    "id": 10,
     "text": "bite bit bitten",
     "translate": "кусать",
     "count": 0
   },
   {
+    "id": 11,
     "text": "bleed bled bled",
     "translate": "кровоточить",
     "count": 0
   },
   {
+    "id": 12,
     "text": "blow blew blown",
     "translate": "дуть",
     "count": 0
   },
   {
+    "id": 13,
     "text": "break broke broken",
     "translate": "ломать",
     "count": 0
   },
   {
+    "id": 14,
     "text": "breed bred bred",
     "translate": "разводить животных",
     "count": 0
   },
   {
+    "id": 15,
     "text": "bring brought brought",
     "translate": "приносить",
     "count": 0
   },
   {
+    "id": 16,
     "text": "build built built ",
     "translate": "строить",
     "count": 0
   },
   {
+    "id": 17,
     "text": "buy bought bought",
     "translate": "покупать",
     "count": 0
   },
   {
+    "id": 18,
     "text": "catch caught caught",
     "translate": "ловить",
     "count": 0
   },
   {
+    "id": 19,
     "text": "choose chose chosen",
     "translate": "выбирать",
     "count": 0
   },
   {
+    "id": 20,
     "text": "cling clung clung",
     "translate": "цепляться",
     "count": 0
   },
   {
+    "id": 21,
     "text": "come came come",
     "translate": "приходить",
     "count": 0
   },
   {
+    "id": 22,
     "text": "cost cost cost",
     "translate": "стоить",
     "count": 0
   },
   {
+    "id": 23,
     "text": "cut cut cut",
     "translate": "резать",
     "count": 0
   },
   {
+    "id": 24,
     "text": "deal dealt dealt",
     "translate": "вести дела",
     "count": 0
   },
   {
+    "id": 25,
     "text": "dig dug dug",
     "translate": "копать",
     "count": 0
   },
   {
+    "id": 26,
     "text": "do did done",
     "translate": "делать",
     "count": 0
   },
   {
+    "id": 27,
     "text": "draw drew drawn",
     "translate": "рисовать, тянуть",
     "count": 0
   },
   {
+    "id": 28,
     "text": "drink drank drunk",
     "translate": "пить",
     "count": 0
   },
   {
+    "id": 29,
     "text": "drive drove driven",
     "translate": "водить автомобиль",
     "count": 0
   },
   {
+    "id": 30,
     "text": "eat ate eaten",
     "translate": "есть",
     "count": 0
   },
   {
+    "id": 31,
     "text": "fall fell fallen",
     "translate": "падать",
     "count": 0
   },
   {
+    "id": 32,
     "text": "feed fed fed",
     "translate": "кормить",
     "count": 0
   },
   {
+    "id": 33,
     "text": "feel felt felt",
     "translate": "чувствовать",
     "count": 0
   },
   {
+    "id": 34,
     "text": "fight fought fought",
     "translate": "бороться",
     "count": 0
   },
   {
+    "id": 35,
     "text": "find found found",
     "translate": "находить",
     "count": 0
   },
   {
+    "id": 36,
     "text": "flee fled fled",
     "translate": "сбегать",
     "count": 0
   },
   {
+    "id": 37,
     "text": "fly flew flown",
     "translate": "летать",
     "count": 0
   },
   {
+    "id": 38,
     "text": "forbid forbade forbidden",
     "translate": "запрещать",
     "count": 0
   },
   {
+    "id": 39,
     "text": "forget forgot forgotten",
     "translate": "забывать",
     "count": 0
   },
   {
+    "id": 40,
     "text": "forgive forgave forgiven",
     "translate": "прощать",
     "count": 0
   },
   {
+    "id": 41,
     "text": "freeze froze frozen",
     "translate": "замораживать",
     "count": 0
   },
   {
+    "id": 42,
     "text": "get got got (gotten)",
     "translate": "получать",
     "count": 0
   },
   {
+    "id": 43,
     "text": "give gave given",
     "translate": "давать",
     "count": 0
   },
   {
+    "id": 44,
     "text": "go went gone",
     "translate": "идти",
     "count": 0
   },
   {
+    "id": 45,
     "text": "grow grew grown",
     "translate": "расти",
     "count": 0
   },
   {
+    "id": 46,
     "text": "hang hung hung",
     "translate": "висеть",
     "count": 0
   },
   {
+    "id": 47,
     "text": "have had had ",
     "translate": "иметь",
     "count": 0
   },
   {
+    "id": 48,
     "text": "hear heard heard",
     "translate": "слышать",
     "count": 0
   },
   {
+    "id": 49,
     "text": "hide hid hidden",
     "translate": "прятать",
     "count": 0
   },
   {
+    "id": 50,
     "text": "hit hit hit",
     "translate": "ударять, попадать",
     "count": 0
   },
   {
+    "id": 51,
     "text": "hold held held",
     "translate": "держать",
     "count": 0
   },
   {
+    "id": 52,
     "text": "hurt hurt hurt",
     "translate": "причинять боль",
     "count": 0
   },
   {
+    "id": 53,
     "text": "keep kept kept",
     "translate": "сохранять, соблюдать",
     "count": 0
   },
   {
+    "id": 54,
     "text": "know knew known",
     "translate": "знать",
     "count": 0
   },
   {
+    "id": 55,
     "text": "lay laid laid",
     "translate": "класть",
     "count": 0
   },
   {
+    "id": 56,
     "text": "lead led led",
     "translate": "вести, лидировать",
     "count": 0
   },
   {
+    "id": 57,
     "text": "learn learnt learnt",
     "translate": "учиться, узнавать",
     "count": 0
   },
   {
+    "id": 58,
     "text": "leave left left",
     "translate": "покидать, оставлять",
     "count": 0
   },
   {
+    "id": 59,
     "text": "lend lent lent ",
     "translate": "давать взаймы",
     "count": 0
   },
   {
+    "id": 60,
     "text": "let let let",
     "translate": "позволять",
     "count": 0
   },
   {
+    "id": 61,
     "text": "lie lay lain",
     "translate": "лежать",
     "count": 0
   },
   {
+    "id": 62,
     "text": "light lit lit",
     "translate": "зажигать, освещать",
     "count": 0
   },
   {
+    "id": 63,
     "text": "lose lost lost",
     "translate": "терять",
     "count": 0
   },
   {
+    "id": 64,
     "text": "make made made",
     "translate": "делать, мастерить",
     "count": 0
   },
   {
+    "id": 65,
     "text": "mean meant meant",
     "translate": "значить",
     "count": 0
   },
   {
+    "id": 66,
     "text": "meet met met",
     "translate": "встречать, знакомиться",
     "count": 0
   },
   {
+    "id": 67,
     "text": "pay paid paid",
     "translate": "платить",
     "count": 0
   },
   {
+    "id": 68,
     "text": "put put put",
     "translate": "класть, ставить",
     "count": 0
   },
   {
+    "id": 69,
     "text": "read read read",
     "translate": "читать",
     "count": 0
   },
   {
+    "id": 70,
     "text": "ride rode ridden",
     "translate": "ездить верхом",
     "count": 0
   },
   {
+    "id": 71,
     "text": "ring rang rung",
     "translate": "звонить",
     "count": 0
   },
   {
+    "id": 72,
     "text": "rise rose risen ",
     "translate": "возрастать, подниматься",
     "count": 0
   },
   {
+    "id": 73,
     "text": "run ran run",
     "translate": "бежать",
     "count": 0
   },
   {
+    "id": 74,
     "text": "say said said",
     "translate": "сказать",
     "count": 0
   },
   {
+    "id": 75,
     "text": "see saw seen",
     "translate": "видеть",
     "count": 0
   },
   {
+    "id": 76,
     "text": "seek sought sought ",
     "translate": "искать",
     "count": 0
   },
   {
+    "id": 77,
     "text": "sell sold sold",
     "translate": "продавать",
     "count": 0
   },
   {
+    "id": 78,
     "text": "send sent sent",
     "translate": "посылать",
     "count": 0
   },
   {
+    "id": 79,
     "text": "set set set ",
     "translate": "устанавливать",
     "count": 0
   },
   {
+    "id": 80,
     "text": "shake shook shaken",
     "translate": "трясти",
     "count": 0
   },
   {
+    "id": 81,
     "text": "shine shone shone",
     "translate": "светить, сиять",
     "count": 0
   },
   {
+    "id": 82,
     "text": "shoot shot shot",
     "translate": "стрелять",
     "count": 0
   },
   {
+    "id": 83,
     "text": "show showed shown ",
     "translate": "показывать",
     "count": 0
   },
   {
+    "id": 84,
     "text": "shrink shrank shrunk",
     "translate": "сжиматься",
     "count": 0
   },
   {
+    "id": 85,
     "text": "shut shut shut",
     "translate": "закрывать, затворять",
     "count": 0
   },
   {
+    "id": 86,
     "text": "sing sang sung ",
     "translate": "петь",
     "count": 0
   },
   {
+    "id": 87,
     "text": "sit sat sat",
     "translate": "сидеть",
     "count": 0
   },
   {
+    "id": 88,
     "text": "sleep slept slept",
     "translate": "спать",
     "count": 0
   },
   {
+    "id": 89,
     "text": "slide slid slid",
     "translate": "скользить",
     "count": 0
   },
   {
+    "id": 90,
     "text": "smell smelt smelt",
     "translate": "пахнуть, нюхать",
     "count": 0
   },
   {
+    "id": 91,
     "text": "speak spoke spoken",
     "translate": "говорить",
     "count": 0
   },
   {
+    "id": 92,
     "text": "spell spelt spelt",
     "translate": "произносить или писать по буквам",
     "count": 0
   },
   {
+    "id": 93,
     "text": "spend spent spent",
     "translate": "тратить, проводить время",
     "count": 0
   },
   {
+    "id": 94,
     "text": "spill spilt (spilled) spilt (spilled)",
     "translate": "разлить",
     "count": 0
   },
   {
+    "id": 95,
     "text": "spin spun spun",
     "translate": "крутить",
     "count": 0
   },
   {
+    "id": 96,
     "text": "split split split",
     "translate": "разделять, раскалывать",
     "count": 0
   },
   {
+    "id": 97,
     "text": "spoil spoilt (spoiled) spoilt (spoiled)",
     "translate": "портить",
     "count": 0
   },
   {
+    "id": 98,
     "text": "spread spread spread",
     "translate": "разворачивать, распространять",
     "count": 0
   },
   {
+    "id": 99,
     "text": "stand stood stood",
     "translate": "стоять",
     "count": 0
   },
   {
+    "id": 100,
     "text": "steal stole stolen",
     "translate": "воровать",
     "count": 0
   },
   {
+    "id": 101,
     "text": "sting stung stung",
     "translate": "жалить",
     "count": 0
   },
   {
+    "id": 102,
     "text": "stink stank stunk",
     "translate": "вонять",
     "count": 0
   },
   {
+    "id": 103,
     "text": "strike struck struck",
     "translate": "бастовать, ударять",
     "count": 0
   },
   {
+    "id": 104,
     "text": "swear swore sworn",
     "translate": "клясться, ругаться",
     "count": 0
   },
   {
+    "id": 105,
     "text": "sweep swept swept",
     "translate": "подметать",
     "count": 0
   },
   {
+    "id": 106,
     "text": "swell swelled swollen (swelled)",
     "translate": "опухать",
     "count": 0
   },
   {
+    "id": 107,
     "text": "swim swam swum",
     "translate": "плавать",
     "count": 0
   },
   {
+    "id": 108,
     "text": "take took taken",
     "translate": "брать",
     "count": 0
   },
   {
+    "id": 109,
     "text": "teach taught taught",
     "translate": "обучать",
     "count": 0
   },
   {
+    "id": 110,
     "text": "tear tore torn",
     "translate": "рвать",
     "count": 0
   },
   {
+    "id": 111,
     "text": "tell told told",
     "translate": "рассказывать",
     "count": 0
   },
   {
+    "id": 112,
     "text": "think thought thought",
     "translate": "думать",
     "count": 0
   },
   {
+    "id": 113,
     "text": "throw threw thrown",
     "translate": "бросать",
     "count": 0
   },
   {
+    "id": 114,
     "text": "understand understood understood",
     "translate": "понимать",
     "count": 0
   },
   {
+    "id": 115,
     "text": "wake woke woken ",
     "translate": "будить",
     "count": 0
   },
   {
+    "id": 116,
     "text": "wear wore worn",
     "translate": "носить (одежду)",
     "count": 0
   },
   {
+    "id": 117,
     "text": "win won won",
     "translate": "побеждать",
     "count": 0
   },
   {
+    "id": 118,
     "text": "wind wound wound",
     "translate": "обматывать, изгибаться",
     "count": 0
   },
   {
+    "id": 119,
     "text": "write wrote written",
     "translate": "писать",
     "count": 0
