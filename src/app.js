@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const { devMiddleware, hotMiddleware } = require('./server/hot-module-reload');
+const { dataHandler } = require('./server/data-handler-update');
 const app = express()
 const fs = require('fs');
 const bodyParser = require("body-parser")
@@ -21,9 +22,9 @@ app.get('*', (req, res) => {
 });
 
 app.post('/file', (req, res) => {
-  console.log(req.body);
-  res.send(200)
 
+  dataHandler(req.body)
+  res.send(200)
 })
 
 app.listen(port, () => {
