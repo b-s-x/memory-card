@@ -20,9 +20,9 @@ app.get('*', (req, res) => {
   res.send(fileContent.toString()).end();
 });
 
-
 app.post('/file', (req, res) => {
-  res.sendStatus(200)
+  console.log(req.body);
+  res.send(200)
 
 })
 

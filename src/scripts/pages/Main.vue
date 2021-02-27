@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <card-container
-    :dataCurrentItem="dataCurrentItem"
-    @nextWord="nextWord()"
+      :dataCurrentItem="dataCurrentItem"
+      @nextWord="nextWord($event)"
     />
   </div>
 </template>
@@ -30,8 +30,9 @@ export default {
   },
 
   methods: {
-    async nextWord() {
-      await this.$store.commit('countRaise')
+    async nextWord(terms) {
+      await this.$store.commit(terms)
+      await this.$store.dispatch('sendDataToServer');
       this.$store.commit('giveMeWord')
     },
   },
@@ -39,20 +40,18 @@ export default {
   async mounted() {
     await this.$store.dispatch('fetchArray');
     this.$store.commit('giveMeWord')
-  },
+  }
 }
 
 </script>
 
 <style lang="scss" scoped>
-
 @import "@common";
 
 .container {
-  height: calc( 100vh - 3vh);
+  height: calc(100vh - 3vh);
   display: grid;
   place-items: center;
 }
-
 </style>
 

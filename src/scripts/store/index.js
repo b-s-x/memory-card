@@ -28,8 +28,8 @@ export default new Vuex.Store({
       commit('settingData', data)
     },
 
-    async sendDataToServer() {
-      const data = {"namememkgndgjdbgBSXBSX": 1 };
+    async sendDataToServer({state}) {
+      const data = state.dataCurrentItem
 
       const response = await fetch("/file", {
         method: "POST",
@@ -47,20 +47,38 @@ export default new Vuex.Store({
       state.dataSet = data
     },
 
-    giveMeWord(state ) {
+    giveMeWord(state) {
       let randomIndex = Math.floor(Math.random() * state.dataSet.length);
-      console.log(randomIndex);
 
-      // if(randomIndex === state.lastRandomIndex) {
-      // //todo something
-      // } else {
-      // }
+      //?? придумать логику чтобы при двух подряд одинаковых randomIndex
+      //?? выпадало другое рандомное значение
+
       state.lastRandomIndex = randomIndex
       state.dataCurrentItem = state.dataSet[randomIndex]
     },
 
     countRaise(state) {
-      state.dataSet[state.lastRandomIndex].count++
+      let count = state.dataCurrentItem.count
+      console.log("before", count);
+      if (count >= 5) {
+        count = 5
+      } else {
+        state.dataCurrentItem.count++
+      }
+    },
+
+    countDecline(state) {
+      let count = state.dataCurrentItem.count
+      if (count <= 0) {
+        count = 0
+      } else {
+        state.dataCurrentItem.count--
+      }
     }
   },
 })
+
+
+// 1) логика обновления каунтера на сервере
+// 2) отправить запрос на сервер с обновлением обновитьи вернуть данные
+// 3) дебоунс для задержки на сервер
