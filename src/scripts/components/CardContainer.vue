@@ -61,18 +61,19 @@ export default {
     raise() {
       this.$refs.quantity.raise()
       this.$refs.cardItem.showRemove()
-      this.$emit('nextWord')
+      this.$emit('nextWord', 'countRaise')
     },
 
     decline() {
       this.$refs.quantity.decline()
       this.$refs.cardItem.showRemove()
-      this.$emit('nextWord')
+      this.$emit('nextWord', 'countDecline')
     },
 
     show() {
       this.$refs.cardItem.show()
-    }
+    },
+
   },
 }
 </script>
@@ -92,17 +93,17 @@ $card-shadow: -8px 6px 57px -1px rgba(34, 60, 80, 0.59);
 }
 
 .button__container {
-  @include flex();
+  display: flex;
   padding-top: 30px;
   height: calc(50px + 0.5vh);
 }
 
 .button {
-  padding: 0 30px;
   margin: 0 10px;
+  flex: 1 0;
 
   &__long {
-    padding: 0 50px;
+    flex: 2 0;
   }
 }
 
