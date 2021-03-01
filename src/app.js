@@ -21,9 +21,17 @@ app.get('*', (req, res) => {
   res.send(fileContent.toString()).end();
 });
 
-app.post('/file', (req, res) => {
+app.post('/file', async (req, res) => {
+  // const data = req.body
 
-  dataHandler(req.body)
+  const data = {
+    "id":3,
+    "text":"be was (were) been",
+    "translate":"быть",
+    "count": 5
+  }
+
+  await dataHandler(data)
   res.send(200)
 })
 
