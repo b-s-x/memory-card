@@ -1,41 +1,39 @@
 const fs = require("fs")
+const path = require('path');
 
-// const data = {
-//   "id":3,
-//   "text":"be was (were) been",
-//   "translate":"быть",
-//   "count": 3
-// }
+const DATA_PATH = path.join(__dirname, "..", "static/files", "words-test.json")
 
-const dataReader = (data, cb) => {
-  fs.readFile('../static/files/words-test.json', 'utf8', (err, dataServer) => {
+const dataReader = (newData, cb) => {
+  fs.readFile(DATA_PATH, 'utf8', (err, dataServer) => {
     const dataServerParse = JSON.parse(dataServer)
-
-    console.log("dataServer", dataServer);
-    console.log("data", data);
-    dataServerParse.filter((elem) =>  {
-      if(elem.id === data.id) {
-        elem.count = data.count
+    dataServerParse.filter((elem) => {
+      if (elem.id === newData.id) {
+        elem.count = newData.count
       }
     })
 
-    cb(null, dataServerParse)
+    cb(err, dataServerParse)
   })
 }
 
 const dataWriter = (data) => {
-  fs.writeFile('../static/files/words-test.json', data, (err) => {
-    if(err) throw err
+  fs.writeFile(DATA_PATH, JSON.stringify(data), (err) => {
+    if (err) throw err
   })
 }
+
 
 const dataHandler = (data) => {
-  dataReader(data, (err, newData) => {
-    const dataServerStringify = JSON.stringify(newData)
-    dataWriter(dataServerStringify)
-  })
-}
+  return new Promise((resolve, reject) => {
+    dataReader(data, (err, newDataParse) => {
+      if (err != null) {
+        reject(err);
+        return;
+      }
 
-// dataHandler(data)
+      resolve(newDataParse)
+    })
+  }).then(dataWriter)
+}
 
 module.exports = { dataHandler }

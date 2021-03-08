@@ -35,7 +35,8 @@ export default new Vuex.Store({
         method: "POST",
         headers: new Headers({
           Accept: 'application/json',
-          'Content-Type': 'application/json; charset=UTF-8'
+          'Content-Type': 'application/json; charset=UTF-8',
+          'Access-Control-Allow-Origin': "*"
         }),
         body: JSON.stringify(data)
       })
