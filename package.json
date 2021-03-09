@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "prod": "npx webpack && node ./src/app.js",
+    "prod": "npx webpack --env production && node ./src/app.js",
     "dev": "npx webpack && nodemon ./src/app.js"
   },
   "author": "",
