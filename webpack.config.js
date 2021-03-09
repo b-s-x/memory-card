@@ -4,8 +4,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack')
 const hotModuleScript = 'webpack-hot-middleware/client'//?path=/__webpack_hmr&timeout=20000&  '
 
+const NODE_ENV = process.env.NODE_ENV || 'development'
+
+const HMRPlugin = () => {
+  const HMR = [];
+  if(NODE_ENV === "development") {
+    HMR.push(new webpack.HotModuleReplacementPlugin())
+  }
+
+  return HMR
+}
+
+
 module.exports = {
-  mode: 'development',
+  mode: NODE_ENV == 'development' ? 'development' : 'production',
   entry: [hotModuleScript, './src/scripts/main.js' ],
 
   output: {
@@ -74,7 +86,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template : './src/views/index.html',
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    ...HMRPlugin()
   ],
   resolve: {
     extensions: ['.js', '.json', '.vue', '.scss'],
