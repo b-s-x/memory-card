@@ -16,6 +16,7 @@ const dataReader = (newData, cb) => {
   })
 }
 
+
 const dataWriter = (data) => {
   fs.writeFile(DATA_PATH, JSON.stringify(data), (err) => {
     if (err) throw err
@@ -24,16 +25,21 @@ const dataWriter = (data) => {
 
 
 const dataHandler = (data) => {
-  return new Promise((resolve, reject) => {
-    dataReader(data, (err, newDataParse) => {
-      if (err != null) {
-        reject(err);
-        return;
-      }
-
-      resolve(newDataParse)
-    })
-  }).then(dataWriter)
+  try {
+    return new Promise((resolve, reject) => {
+      dataReader(data, (err, newDataParse) => {
+        if (err != null) {
+          reject(err);
+          return;
+        }
+        resolve(newDataParse)
+      })
+    }).then(dataWriter)
+      .catch(console.log)
+  } catch (err) {
+    console.log(err);
+  };
 }
+
 
 module.exports = { dataHandler }

@@ -27,9 +27,10 @@ app.get('*', (req, res) => {
 app.post('/file', async (req, res) => {
   const data = req.body
   await dataHandler(data)
-
+  res.send("ok")
 })
 
 app.listen(port, () => {
+  app.keepAliveTimeout = 0;
   console.log(`Server working on http://localhost:${port}` );
 })
