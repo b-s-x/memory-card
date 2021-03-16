@@ -1,3 +1,38 @@
+@import "./variables";
+
 %font-family {
   font-family: 'Bitter', serif;
+}
+
+%form {
+  background-color: $white;
+  @include flex();
+  flex-direction: column;
+  padding: 0 48px;
+  height: 100%;
+}
+
+%input {
+  background-color: #fff;
+  padding: 15px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid transparent;
+
+  &:focus {
+    border: 2px solid black;
+  }
+}
+
+%form-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+%container-form {
+  height: 100%;
+  position: absolute;
+  width: 50%;
 }

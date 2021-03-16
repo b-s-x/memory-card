@@ -60,7 +60,6 @@ export default new Vuex.Store({
 
     countRaise(state) {
       let count = state.dataCurrentItem.count
-      console.log("before", count);
       if (count >= 5) {
         count = 5
       } else {
@@ -80,6 +79,4 @@ export default new Vuex.Store({
 })
 
 
-// 1) логика обновления каунтера на сервере
-// 2) отправить запрос на сервер с обновлением обновитьи вернуть данные
 // 3) дебоунс для задержки на сервер
