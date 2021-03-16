@@ -6,28 +6,25 @@
       <input type="email" placeholder="Email" class="input" />
       <input type="password" placeholder="Password" class="input" />
 
-      <b-button class="btn-sign-up" text="Sign Up"/>
+      <m-button class="btn-sign-up" text="Sign Up"/>
     </form>
   </div>
 </template>
 
 <script>
-import BButton from "./Button"
 
+import MButton from "@components/Button/MButton";
 
 export default {
   components: {
-    BButton
+    MButton
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// @import "../styles/variables";
-// @import "../styles/template";
 
 @import "@common";
-
 
 .container-form {
   @extend %container-form;

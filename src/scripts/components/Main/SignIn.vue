@@ -5,28 +5,25 @@
         <input type="email" placeholder="Email" class="input" />
         <input type="password" placeholder="Password" class="input" />
         <a href="#" class="link">Forgot your password?</a>
-        <b-button text="Sign In"/>
+        <m-button text="Sign In"/>
       </form>
     </div>
 </template>
 
 <script>
-import BButton from "./Button"
 
+import MButton from "@components/Button/MButton"
 
 export default {
   components: {
-    BButton,
+    MButton,
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// @import "../styles/variables";
-// @import "../styles/template";
 
 @import "@common";
-
 
 .link {
   color: $gray;
