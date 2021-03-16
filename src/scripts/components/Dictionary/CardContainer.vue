@@ -42,9 +42,9 @@
 
 <script>
 
-import CardItem from '@components/CardItem'
-import CustomButton from "@components/CustomButton"
-import Quantity from "@components/Quantity"
+import CardItem from '@components/Dictionary/CardItem'
+import CustomButton from "@components/Dictionary/CustomButton"
+import Quantity from "@components/Dictionary/Quantity"
 
 export default {
   components: {

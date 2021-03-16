@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import CardContainer from '@components/CardContainer'
+import CardContainer from '@components/Dictionary/CardContainer'
 
 import { mapGetters } from 'vuex'
 
