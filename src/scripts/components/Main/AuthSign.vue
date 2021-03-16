@@ -9,13 +9,13 @@
       <div class="overlay">
         <div class="overlay__panel overlay--left">
           <div class="btn-box" @click="toggle()">
-            <b-button text="Sign In" />
+            <m-button text="Sign In" />
           </div>
         </div>
 
         <div class="overlay__panel overlay--right">
           <div class="btn-box" @click="toggle()">
-            <b-button text="Sign Up" />
+            <m-button text="Sign Up" />
           </div>
         </div>
       </div>
@@ -27,13 +27,13 @@
 
 import SignUp from "./SignUp"
 import SignIn from "./SignIn";
-import BButton from "./Button"
+import MButton from "@components/Button/MButton"
 
 export default {
   components: {
     SignUp,
     SignIn,
-    BButton,
+    MButton,
   },
 
   methods: {
@@ -49,15 +49,12 @@ export default {
 
 @import "@common";
 
-// @import "../styles/variables";
-// @import "../styles/mixins";
-
 .container {
   background-color: $white;
   border-radius: $button-radius;
-  box-shadow: $shadow;
-  height: $max-height;
-  max-width: $max-width;
+  box-shadow: $auth-shadow;
+  height: 70%;
+  max-width: 70%;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -76,8 +73,6 @@ export default {
 .right-panel-active .container__overlay {
   transform: translateX(-100%);
 }
-
-$photo: "https://images.unsplash.com/photo-1589429152188-da4f442e177b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80";
 
 .overlay {
   background-image: url($photo);
