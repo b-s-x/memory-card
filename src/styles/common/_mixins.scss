@@ -3,3 +3,9 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+@mixin frame($shadow, $background-color, $border-radius: 5px) {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  background-color: $background-color;
+}
