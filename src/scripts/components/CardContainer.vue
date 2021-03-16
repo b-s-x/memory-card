@@ -82,8 +82,6 @@ export default {
 
 @import "@common";
 
-$card-shadow: -8px 6px 57px -1px rgba(34, 60, 80, 0.59);
-
 .card__container {
   position: relative;
   width: clamp(410px, 40%, 70%);
