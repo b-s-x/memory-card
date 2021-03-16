@@ -10,13 +10,13 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'root',
+      name: 'Main',
       component: Main
     },
 
     {
       path: '/dictionary',
-      name: 'root',
+      name: 'Dictionary',
       component: Dictionary,
     },
 
