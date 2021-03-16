@@ -15,20 +15,22 @@ export default {
 <style lang="scss" scoped>
 
 @import "@common";
-// @import "../styles/variables";
 
-
+$padding-height: calc(8px + 0.3vh);
+$padding-width: calc(36px + 0.5vw);
+$font-size: calc(13px + 0.5vw);
+$main--color: black;
 
 .btn {
-  background-color: black;
+  padding:  $padding-height $padding-width;
   border-radius: 20px;
-  border: 1px solid black;
+  font-size: $font-size;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border: 1px solid $main--color;
+  background-color: $main--color;
   color: $white;
   cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  padding: 0.9rem 4rem;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
