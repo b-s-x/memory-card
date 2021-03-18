@@ -30,7 +30,10 @@
 %form-title {
   margin: 0;
   margin-bottom: 20px;
-  font-size: calc(26px + 0.5vw);
+  font: {
+    size: calc(26px + 0.5vw);
+    weight: 900;
+  }
 }
 
 %container-form {
