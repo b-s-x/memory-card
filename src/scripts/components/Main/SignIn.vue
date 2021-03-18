@@ -4,26 +4,30 @@
     <form action="#" class="form" @submit.prevent>
       <div class="form-title">Sign In</div>
       <input type="email" placeholder="Email" class="input" />
-      <input type="password" placeholder="Password" class="input" />
+      <input
+        type="password"
+        placeholder="Password"
+        autocomplete="on"
+        class="input"
+      />
       <a href="#" class="link">Forgot your password?</a>
-      <m-button text="Sign In"/>
+
+      <m-button text="Sign In" />
     </form>
   </div>
 </template>
 
 <script>
-
-import MButton from "@components/Button/MButton"
+import MButton from "@components/Button/MButton";
 
 export default {
   components: {
     MButton,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 @import "@common";
 
 .link {
@@ -51,5 +55,4 @@ export default {
 .container-form {
   @extend %container-form;
 }
-
 </style>

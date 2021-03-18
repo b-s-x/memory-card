@@ -4,26 +4,29 @@
       <div class="form-title">Sign Up</div>
       <input type="text" placeholder="User" class="input" />
       <input type="email" placeholder="Email" class="input" />
-      <input type="password" placeholder="Password" class="input" />
+      <input
+        type="password"
+        placeholder="Password"
+        autocomplete="on"
+        class="input"
+      />
 
-      <m-button class="btn-sign-up" text="Sign Up"/>
+      <m-button class="btn-sign-up" text="Sign Up" />
     </form>
   </div>
 </template>
 
 <script>
-
 import MButton from "@components/Button/MButton";
 
 export default {
   components: {
-    MButton
-  }
-}
+    MButton,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 @import "@common";
 
 .container-form {
@@ -49,5 +52,4 @@ export default {
 .container__signup {
   transform: translateX(100%);
 }
-
 </style>
