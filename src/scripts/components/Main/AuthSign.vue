@@ -1,12 +1,11 @@
 <template>
-  <div class="container" :class="{'panel-active': isActive }">
+  <div class="container" :class="{ 'panel-active': isActive }">
 
     <sign-up/>
 
     <sign-in/>
 
     <div class="container__overlay">
-
       <div class="overlay">
 
         <div class="overlay__panel overlay__left">
@@ -22,23 +21,21 @@
         </div>
 
       </div>
-
     </div>
 
   </div>
 </template>
 
 <script>
-
-import SignUp from "./SignUp"
+import SignUp from "./SignUp";
 import SignIn from "./SignIn";
-import MButton from "@components/Button/MButton"
+import MButton from "@components/Button/MButton";
 
 export default {
   data() {
     return {
       isActive: true,
-    }
+    };
   },
 
   components: {
@@ -49,57 +46,52 @@ export default {
 
   methods: {
     toggleActiveSide() {
-      this.isActive = !this.isActive
-    }
+      this.isActive = !this.isActive;
+    },
   },
-}
-
+};
 </script>
 
 <style lang="scss" scoped>
-
 @import "@common";
 
 .container {
-  background-color: $white;
+  background: $white;
   height: clamp(50%, 70%, 80%);
-  max-width: clamp(50%, 70%, 80%);
+  width: clamp(50%, 70%, 80%);
   position: relative;
-  width: 100%;
   border-radius: 60px;
-}
 
-.container__overlay {
-  height: 100%;
-  top: -1%;
-  left: 50%;
-  overflow: hidden;
-  position: absolute;
-  transition: $transform;
-  width: 51%;
-  height: 102%;
-  z-index: 100;
+  &__overlay {
+    position: absolute;
+    height: 102%;
+    width: 51%;
+    top: -1%;
+    left: 50%;
+    z-index: 100;
+    overflow: hidden;
+    transition: $transform;
+  }
 }
 
 .overlay {
+  position: relative;
+  height: 100%;
+  width: 200%;
+  left: -100%;
   background-image: url($photo);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  left: -100%;
-  position: relative;
   transition: $transform;
-  width: 200%;
-}
 
-.overlay__panel {
-  @include flex();
-  flex-direction: column;
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  transition: $transform;
+  &__panel {
+    @include flex();
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    transition: $transform;
+  }
 }
 
 .panel-active .container__overlay {
@@ -127,5 +119,4 @@ export default {
 .panel-active .overlay__right {
   transform: translateX(20%);
 }
-
 </style>
