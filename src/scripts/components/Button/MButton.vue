@@ -17,8 +17,8 @@ export default {
 @import "@common";
 
 $padding-height: calc(8px + 0.3vh);
-$padding-width: calc(36px + 0.5vw);
-$font-size: calc(13px + 0.5vw);
+$padding-width: calc(36px + 0.3vw);
+$font-size: calc(12px + 0.5vw);
 $main--color: black;
 
 .btn {
