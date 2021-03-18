@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <div class="overlay__panel overlay--right">
+        <div class="overlay__panel overlay__right">
           <div class="btn-box" @click="toggleActiveSide()">
             <m-button text="Sign Up" />
           </div>
@@ -40,6 +40,7 @@ export default {
       isActive: true,
     }
   },
+
   components: {
     SignUp,
     SignIn,
@@ -52,6 +53,7 @@ export default {
     }
   },
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -60,10 +62,8 @@ export default {
 
 .container {
   background-color: $white;
-  // box-shadow: $auth-shadow;
   height: clamp(50%, 70%, 80%);
   max-width: clamp(50%, 70%, 80%);
-  // overflow: hidden;
   position: relative;
   width: 100%;
   border-radius: 60px;
@@ -71,11 +71,13 @@ export default {
 
 .container__overlay {
   height: 100%;
+  top: -1%;
   left: 50%;
   overflow: hidden;
   position: absolute;
   transition: $transform;
-  width: 50%;
+  width: 51%;
+  height: 102%;
   z-index: 100;
 }
 
@@ -117,12 +119,12 @@ export default {
   transform: translateX(0);
 }
 
-.overlay--right {
+.overlay__right {
   right: 0;
   transform: translateX(0);
 }
 
-.panel-active .overlay--right {
+.panel-active .overlay__right {
   transform: translateX(20%);
 }
 
