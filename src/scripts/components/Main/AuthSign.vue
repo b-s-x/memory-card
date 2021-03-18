@@ -1,25 +1,30 @@
 <template>
-  <div class="container right-panel-active">
+  <div class="container" :class="{'panel-active': isActive }">
 
     <sign-up/>
 
     <sign-in/>
 
     <div class="container__overlay">
+
       <div class="overlay">
-        <div class="overlay__panel overlay--left">
-          <div class="btn-box" @click="toggle()">
+
+        <div class="overlay__panel overlay__left">
+          <div class="btn-box" @click="toggleActiveSide()">
             <m-button text="Sign In" />
           </div>
         </div>
 
         <div class="overlay__panel overlay--right">
-          <div class="btn-box" @click="toggle()">
+          <div class="btn-box" @click="toggleActiveSide()">
             <m-button text="Sign Up" />
           </div>
         </div>
+
       </div>
+
     </div>
+
   </div>
 </template>
 
@@ -30,6 +35,11 @@ import SignIn from "./SignIn";
 import MButton from "@components/Button/MButton"
 
 export default {
+  data() {
+    return {
+      isActive: true,
+    }
+  },
   components: {
     SignUp,
     SignIn,
@@ -37,9 +47,8 @@ export default {
   },
 
   methods: {
-    toggle() {
-      const container = document.querySelector(".container");
-      container.classList.toggle("right-panel-active");
+    toggleActiveSide() {
+      this.isActive = !this.isActive
     }
   },
 }
@@ -51,13 +60,13 @@ export default {
 
 .container {
   background-color: $white;
-  border-radius: $button-radius;
-  box-shadow: $auth-shadow;
-  height: 70%;
-  max-width: 70%;
-  overflow: hidden;
+  // box-shadow: $auth-shadow;
+  height: clamp(50%, 70%, 80%);
+  max-width: clamp(50%, 70%, 80%);
+  // overflow: hidden;
   position: relative;
   width: 100%;
+  border-radius: 60px;
 }
 
 .container__overlay {
@@ -68,10 +77,6 @@ export default {
   transition: $transform;
   width: 50%;
   z-index: 100;
-}
-
-.right-panel-active .container__overlay {
-  transform: translateX(-100%);
 }
 
 .overlay {
@@ -86,10 +91,6 @@ export default {
   width: 200%;
 }
 
-.right-panel-active .overlay {
-  transform: translateX(50%);
-}
-
 .overlay__panel {
   @include flex();
   flex-direction: column;
@@ -99,12 +100,20 @@ export default {
   transition: $transform;
 }
 
+.panel-active .container__overlay {
+  transform: translateX(-100%);
+}
+
+.panel-active .overlay {
+  transform: translateX(50%);
+}
+
 //buttons move
-.overlay--left {
+.overlay__left {
   transform: translateX(-20%);
 }
 
-.right-panel-active .overlay--left {
+.panel-active .overlay__left {
   transform: translateX(0);
 }
 
@@ -113,22 +122,8 @@ export default {
   transform: translateX(0);
 }
 
-.right-panel-active .overlay--right {
+.panel-active .overlay--right {
   transform: translateX(20%);
-}
-
-@keyframes show {
-  0%,
-  49.99% {
-    opacity: 0;
-    z-index: 1;
-  }
-
-  50%,
-  100% {
-    opacity: 1;
-    z-index: 5;
-  }
 }
 
 </style>
