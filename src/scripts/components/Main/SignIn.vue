@@ -1,14 +1,14 @@
 
 <template>
-  <div class="container-form container--signin">
-      <form action="#" class="form" @submit.prevent>
-        <h2 class="form-title">Sign In</h2>
-        <input type="email" placeholder="Email" class="input" />
-        <input type="password" placeholder="Password" class="input" />
-        <a href="#" class="link">Forgot your password?</a>
-        <m-button text="Sign In"/>
-      </form>
-    </div>
+  <div class="container-form">
+    <form action="#" class="form" @submit.prevent>
+      <div class="form-title">Sign In</div>
+      <input type="email" placeholder="Email" class="input" />
+      <input type="password" placeholder="Password" class="input" />
+      <a href="#" class="link">Forgot your password?</a>
+      <m-button text="Sign In"/>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
 @import "@common";
 
 .link {
-  color: $gray;
+  color: $black;
   margin: 24px 0;
   text-decoration: none;
 

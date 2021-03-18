@@ -1,7 +1,7 @@
 <template>
-  <div class="container-form container--signup">
+  <div class="container-form container__signup">
     <form action="#" class="form" @submit.prevent>
-      <h2 class="form-title">Sign Up</h2>
+      <div class="form-title">Sign Up</div>
       <input type="text" placeholder="User" class="input" />
       <input type="email" placeholder="Email" class="input" />
       <input type="password" placeholder="Password" class="input" />
@@ -46,7 +46,7 @@ export default {
   margin-top: 15px;
 }
 
-.container--signup {
+.container__signup {
   transform: translateX(100%);
 }
 
