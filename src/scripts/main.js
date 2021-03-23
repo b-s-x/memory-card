@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import App from './App'
+import Vuelidate from 'vuelidate'
 import router from "./router"
 import store from './store'
+import App from './App'
+
+Vue.use(Vuelidate)
 
 new Vue({
   router,
