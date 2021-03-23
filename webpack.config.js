@@ -18,6 +18,7 @@ const HMRPlugin = () => {
 
 module.exports = {
   mode: NODE_ENV == 'development' ? 'development' : 'production',
+  // mode: 'production',
   entry: [hotModuleScript, './src/scripts/main.js' ],
 
   output: {
@@ -86,7 +87,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template : './src/views/index.html',
     }),
-    ...HMRPlugin()
+    ...HMRPlugin(),
   ],
   resolve: {
     extensions: ['.js', '.json', '.vue', '.scss'],
