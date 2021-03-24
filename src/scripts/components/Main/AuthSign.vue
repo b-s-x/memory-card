@@ -1,9 +1,9 @@
 <template>
   <div class="container" :class="{ 'panel-active': isActive }">
 
-    <sign-up/>
+    <sign-up @registerUser="sentFormToStorage($event)"/>
 
-    <sign-in/>
+    <sign-in @authenticationUser="sentFormToStorage($event)"/>
 
     <div class="container__overlay">
       <div class="overlay">
@@ -48,6 +48,10 @@ export default {
     toggleActiveSide() {
       this.isActive = !this.isActive;
     },
+
+    sentFormToStorage(form) {
+      console.log(form);
+    }
   },
 };
 </script>

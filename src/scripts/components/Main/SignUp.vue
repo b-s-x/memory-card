@@ -1,6 +1,6 @@
 <template>
   <div class="container-form container__signup">
-    <form action="#" class="form" @submit.prevent="" novalidate>
+    <form action="#" class="form" @submit.prevent="registerUser" novalidate>
       <div class="form-title">Sign Up</div>
       <input
         @blur="$v.formRegSignUp.email.$touch()"
@@ -11,19 +11,15 @@
         class="input"
       />
 
-      <div
-        v-if="$v.formRegSignUp.email.$dirty && !$v.formRegSignUp.email.required"
-        class="formErrText"
-      >
-        {{ msgRequired }}
-      </div>
+      <transition name="fade" mode="out-in">
+        <div v-if="ifFormRegEmailDirtyOrRequired" class="form-error__text">
+          {{ msgRequired }}
+        </div>
 
-      <div
-        v-if="$v.formRegSignUp.email.$dirty && !$v.formRegSignUp.email.email"
-        class="formErrText"
-      >
-        {{ msgToBeEmail }}
-      </div>
+        <div v-if="ifFormRegEmailDirtyOrEmail" class="form-error__text">
+          {{ msgToBeEmail }}
+        </div>
+      </transition>
 
       <input
         @blur="$v.formRegSignUp.password.$touch()"
@@ -35,7 +31,7 @@
         autocomplete
       />
 
-      <div v-show="$v.formRegSignUp.password.$dirty && !$v.formRegSignUp.password.minLength" class="formErrText">
+      <div v-if="ifFormRegPasswordDirtyOrMinLength" class="form-error__text">
         {{ msgNotLessSymbol }}
       </div>
 
@@ -49,11 +45,11 @@
         class="input"
       />
 
-      <div v-show="$v.formRegSignUp.passwordConfirm.$dirty && !$v.formRegSignUp.passwordConfirm.sameAs" class="formErrText">
+      <div v-if="ifFormRegPasswordConfirmDirtyOrSameAs" class="form-error__text">
         {{ msgNotSameAs }}
       </div>
 
-      <m-button class="btn-sign-up" text="Sign Up" />
+      <m-button type="submit" class="btn-sign-up" text="Sign Up" />
     </form>
   </div>
 </template>
@@ -75,6 +71,8 @@ export default {
       msgToBeEmail: "Это поле должно быть email адресом",
       msgNotLessSymbol: "Должно быть не менее 6 символов",
       msgNotSameAs: "Пароли не совпадают",
+
+      submitStatus: null,
 
       formRegSignUp: {
         email: "",
@@ -103,49 +101,98 @@ export default {
     },
   },
 
+  computed: {
+    ifFormRegEmailDirtyOrRequired() {
+      return this.$v.formRegSignUp.email.$dirty &&
+            !this.$v.formRegSignUp.email.required
+    },
+
+    ifFormRegEmailDirtyOrEmail() {
+      return this.$v.formRegSignUp.email.$dirty &&
+            !this.$v.formRegSignUp.email.email
+    },
+
+    ifFormRegPasswordDirtyOrMinLength() {
+      return this.$v.formRegSignUp.password.$dirty &&
+            !this.$v.formRegSignUp.password.minLength
+    },
+
+    ifFormRegPasswordConfirmDirtyOrSameAs() {
+      return this.$v.formRegSignUp.passwordConfirm.$dirty &&
+            !this.$v.formRegSignUp.passwordConfirm.sameAs
+    }
+  },
+
   methods: {
     status(validator) {
       return {
-        formErr: validator.$error,
+        'form-error': validator.$error,
       };
+    },
+
+    registerUser() {
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        this.submitStatus = "ERROR";
+      } else {
+        const newUserForm = {
+          email: this.formRegSignUp.email,
+          password: this.formRegSignUp.password,
+          passwordConfirm: this.formRegSignUp.passwordConfirm,
+        };
+
+        this.$emit('registerUser', newUserForm)
+        this.submitStatus = "OK";
+
+        for (let input in this.formRegSignUp) {
+          this.formRegSignUp[input] = "";
+        }
+
+        console.log("Регистрация успешна");
+
+        this.$v.$reset();
+      }
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+
 @import "@common";
 
-.container-form {
-  @extend %container-form;
+.container {
+  &-form {
+    @extend %container-form;
+  }
+
+  &__signup {
+    transform: translateX(100%);
+  }
 }
 
 .form {
   @extend %form;
+
+  &-title {
+    @extend %form-title;
+  }
 }
 
 .input {
   @extend %input;
 }
 
-.form-title {
-  @extend %form-title;
+.form-error {
+  @extend %form-error;
+
+  &__text {
+    @extend %form-error__text;
+  }
 }
 
 .btn-sign-up {
   margin-top: 15px;
 }
 
-.container__signup {
-  transform: translateX(100%);
-}
-
-.formErr {
-  background: rgba(243, 78, 78, 0.342);
-  border: 1px solid red;
-}
-
-.formErrText {
-  color: red;
-}
 </style>
