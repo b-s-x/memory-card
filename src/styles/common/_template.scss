@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./_animations";
 
 %font-family {
   font-family: 'Bitter', serif;
@@ -45,6 +46,7 @@
 %form-error {
   background: $error--background;
   border: 1px solid $error--border;
+  animation: shakeX 0.5s ease;
 }
 
 %form-error__text {

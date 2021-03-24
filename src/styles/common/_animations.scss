@@ -8,3 +8,20 @@
   opacity: 0;
   transition: 0.5s;
 }
+
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50%,
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  30%,
+  70% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
