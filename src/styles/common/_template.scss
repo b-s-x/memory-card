@@ -41,3 +41,14 @@
   position: absolute;
   width: 50%;
 }
+
+%form-error {
+  background: $error--background;
+  border: 1px solid $error--border;
+}
+
+%form-error__text {
+  color: $error--text;
+  margin: 1px 0;
+  font-size: 16px;
+}
